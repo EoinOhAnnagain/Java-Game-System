@@ -1,7 +1,9 @@
 # Java-Game-System
 Game system project from my Java module at UCD
 
-Thank you for taking the opportunity to look through my project. The folder gameProject contains all of the java files to run the project. 
+Thank you for taking the opportunity to look through my project. This repo contains my project as it was submitted as part of my Java module bar an update to Start.java based on the feedback I received. 
+
+The folder gameProject contains all of the java files to run the project. 
 This is a comand line interface game system. To begin run the file Start.java. In the process of doing so you will find that multiple .txt files are generated for storing player and game data. 
 
 The game is designed to be somewhat unforgiving if you do not win. Loosing all your points will result in your player being locked out of the game. You will still be able to play using other player characters though. Of note is that there is a hidden option in the systems main menu. When choosing from all the options displayed you can enter the Konami code 'UUDDLRLRBA' in order to play a hiden game that adjusts a multiplyer based on if you win or loose. 
