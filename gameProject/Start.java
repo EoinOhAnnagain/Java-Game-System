@@ -102,7 +102,8 @@ public class Start {
 			// If rejected ask if they are sure
 			if (!eliteChoice) {
 				System.out.println("Are you sure. You'll start withn 1337 points compared to on 100 for standard player.");
-				eliteChoice = common.yesNo(input);
+				eliteChoice = !(common.yesNo(input));
+				
 			}
 			
 			// If they want to be elite players 
@@ -153,21 +154,21 @@ public class Start {
 				}
 				
 			// Standard player setup
-			} else {
-				System.out.println("No problem.");
-				
-				// Create instance of standard player
-				StandardPlayer player = new StandardPlayer(playerName, input);
-				
-				// Add player name to the list of players
-				players.add(playerName);
-				
-				// Save the list of players to playerName.txt
-				savePlayers(pNames, players);
-				
-				// Bring elite player to main menu
-				MainMenu.games(player, input);
 			}
+			System.out.println("No problem.");
+				
+			// Create instance of standard player
+			StandardPlayer player = new StandardPlayer(playerName, input);
+				
+			// Add player name to the list of players
+			players.add(playerName);
+				
+			// Save the list of players to playerName.txt
+			savePlayers(pNames, players);
+				
+			// Bring standard player to main menu
+			MainMenu.games(player, input);
+			
 		}
 		// Close scanner as, if here, player has quit the game
 		input.close();
